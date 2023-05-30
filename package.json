@@ -7,7 +7,7 @@
           "backend": "cd backend; nodemon server.js",
           "build": "cd frontend; npm run build",
           "test": "echo \"No test specified\" && exit 1",
-          "start": "npm index.js"
+          "start": "node index.js"
       },
      "repository": {
           "type": "git",
