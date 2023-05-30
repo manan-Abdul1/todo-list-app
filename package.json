@@ -4,10 +4,10 @@
       "description": "",
       "scripts": {
           "frontend": "cd frontend; npm start",
-          "backend": "cd backend; npm start",
+          "backend": "cd backend; nodemon server.js",
           "build": "echo \"No build specified\" && exit 1",
           "test": "echo \"No test specified\" && exit 1",
-          "start": "node index.js"
+          "start": "cd frontend; npm index.js"
       },
      "repository": {
           "type": "git",
