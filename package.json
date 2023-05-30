@@ -3,11 +3,13 @@
       "version": "1.0.0",
       "description": "",
       "scripts": {
+          "server": "nodemon server.js",
           "frontend": "cd frontend; npm start",
           "backend": "cd backend; nodemon server.js",
           "build": "cd frontend; npm run build",
           "test": "echo \"No test specified\" && exit 1",
-          "start": "cd backend; node server.js"
+          "start": "cd backend; node server.js",
+          "dev": "concurrently \"npm start\" \"npm run frontend\" ",
       },
      "repository": {
           "type": "git",
