@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const getList = async () => {
       try {
-        const response = await axios.get('http://localhost:5500/tasks');
+        const response = await axios.get('/tasks');
         const tasksData = response.data;
         setTasks(tasksData);
       } catch (error) {
@@ -27,7 +27,7 @@ function App() {
 
   const addTask = async (task) => {
     try {
-      const response = await axios.post('http://localhost:5500/api/tasks', task);
+      const response = await axios.post('/api/tasks', task);
       console.log(response.data, 'data');
       // Handle the successful API response
       const newTask = response.data;

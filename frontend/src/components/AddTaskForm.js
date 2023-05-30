@@ -17,7 +17,7 @@ function AddTaskForm({ setTasks }) {
       };
   
       try {
-        await axios.post('http://localhost:5500/api/tasks', newTask);
+        await axios.post('/api/tasks', newTask);
         // console.log('Task added successfully!');
         setTaskTitle('');  
       } catch (error) {
